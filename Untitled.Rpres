@@ -1,0 +1,56 @@
+Data Science Specialization: Capstone Project
+========================================================
+author: Mughundhan Chandrasekar
+date: 9-Feb-2018
+autosize: true
+
+About the project
+========================================================
+- **Aim:** To build a R Shiny Web app, which accepts word(s) as input, predict the next word using Natural Language Processing and display the predicted word along with analysis.
+
+- **Introductory Stage:** The preliminary assessments and basic Data munging operations were done on R Studio and published in RPubs as a R-Markdown file. Access the weblink: http://rpubs.com/Mughundhan/251185
+
+- **Link for RShiny App:** https://mughundhanc.shinyapps.io/predictive_text_modeling
+
+
+Data Preparatory Stage - 1
+========================================================
+
+1. **Data Cleaning:**
+  - **Noise Removal:** Punctuations and numericals are removed (irrelevant to the context of our project)
+  - **Standardization:** The characters in the data-set is converted to lower-case
+  - **Stemming:** For efficient results, we need to classify these words into a single root-word and use it for text mining purposes
+  - **Stop-words:** Words like "is, the" are all removed
+  - **Whitespaces:** Removed and the data-set is processed as a plain text document
+
+
+Data Preparatory Stage - 2
+========================================================
+
+2. **Document Term Matrix:**
+  - The data-set is stored in a corpus
+  - Transforming the data-set into a document term matrix enables the data to be stored as : (rows, columns) = (document, term)
+  - The document term matrix is further converted into a matrix in-order to make computations pretty efficiently
+  - The number of terms and their corresponding frequencies shall be obtained by computing the column sum ansd its further sorted in descending order (based on frequencies)
+  - The data holding the matrix exported using write.csv
+
+Exploratory Data Analysis
+========================================================
+1. **About the data-set:** Three data-sets were given, namely Twitter, blogs and news (all in .txt format)
+
+2. **Exploratory Data Analysis:**
+  - **Data Exploration:** Performed basic text-mining operations using regular expressions and other text mining functions (to identify occurrences, replace text etc)
+  - **Visualizations:** The visualizations were designed using ggplot2 and wordcloud - to build visually appealing graphs.
+  
+Word Prediction
+========================================================
+**Technique used: Natural Language Processing**
+
+- Steps involved:
+  - Text processing
+  - Tokenizations
+  - Feature Extraction
+  - Unigrams, Bigrams, Trigrams, n-grams
+  - Predict using machine learning
+  
+- [Click here to check out the shiny app](https://mughundhanc.shinyapps.io/predictive_text_modeling)

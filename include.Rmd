@@ -1,0 +1,17 @@
+---
+title: "Predictive Text Modeling"
+author: "Mughundhan Chandrasekar"
+date: "December 14, 2014"
+output: html_document
+---
+
+
+This R Shiny Web App is built as a part of the Data Science Specialization's Capstone project (instructed by John Hopkins University of Coursera).
+
+Aim: Built R Shiny Web app to accept word(s) as input, predict the next word using Natural Language Processing techniques and display the predicted word(s) as output.
+
+**Guide to use this app:**
+
+1. **Tab1 - Word Prediction:** The top 3 immediate words are given in different font-size based on the probability of occurrence, as we see on the mobile device while typing messages. Further, a data-table with top 10 predicted words for the given input is computed and displayed with their corresponding ranks.
+
+2. **Tab2 - Word Cloud:** This tab features an exploratory data analysis technique which is always associated with text mining (word-cloud). The user is allowed to enter the input and also to decide the maximum number of words to be displayed in the word-cloud.
